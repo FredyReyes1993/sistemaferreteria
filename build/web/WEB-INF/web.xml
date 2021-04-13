@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>svrlogin</servlet-name>
+        <servlet-class>controlador.svrlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>svragregarusuario</servlet-name>
+        <servlet-class>controlador.svragregarusuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>prueba</servlet-name>
+        <servlet-class>controlador.prueba</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>svrperfil</servlet-name>
+        <servlet-class>controlador.svrperfil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>svrlogin</servlet-name>
+        <url-pattern>/svrlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>svragregarusuario</servlet-name>
+        <url-pattern>/svragregarusuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>prueba</servlet-name>
+        <url-pattern>/prueba</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>svrperfil</servlet-name>
+        <url-pattern>/svrperfil</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
