@@ -55,7 +55,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    \n");
       out.write("    <!--Fontawesome-->\n");
       out.write("\t<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.3.1/css/all.css\" integrity=\"sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU\" crossorigin=\"anonymous\">\n");
-      out.write("        <link href=\"estiloscss/login.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("       \n");
       out.write("        \n");
       out.write("        <script src=\"https://ajax.googleapes.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n");
       out.write("        <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n");
