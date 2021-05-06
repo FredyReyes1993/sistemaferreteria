@@ -97,35 +97,29 @@ public final class registrousuario_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("\n");
-      out.write("                        <div class=\"form-group\">\n");
+      out.write("                         <div class=\"form-group\">\n");
       out.write("                            <label for=\"name\" class=\"cols-sm-2 control-label\">Perfil</label>\n");
       out.write("                            <div class=\"cols-sm-10\">\n");
       out.write("                                <div class=\"input-group\">\n");
       out.write("                                    <span class=\"input-group-addon\"><i class=\"fa fa-user fa\" aria-hidden=\"true\"></i></span>\n");
-      out.write("                                    <select class=\"form-select\" name=\"perfiles\" aria-label=\"Default select example\">\n");
-      out.write("                                        <option selected>Seleccione el perfil</option>\n");
-      out.write("                                        ");
-
-                                            gestionusuarios gu = new gestionusuarios();
-                                            for (gestionusuarios g : gu.mostrarPerfil()) {
-                                        
-      out.write("                               \n");
-      out.write("\n");
-      out.write("                                        <option value=\"");
-out.print(g.getPerfil());
-      out.write('"');
-      out.write('>');
-out.print(g.getPerfil());
-      out.write("</option>\n");
-      out.write("\n");
-      out.write("                                        ");
-}
-      out.write("  \n");
-      out.write("                                    </select>   \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("                                    <div class=\"form-check\">\n");
+      out.write("                                        <input class=\"form-check-input\" type=\"radio\" name=\"flexRadioDefault\" value=\"Administrador\">\n");
+      out.write("                                        <label class=\"form-check-label\" for=\"flexRadioDefault1\">\n");
+      out.write("                                            Administrador\n");
+      out.write("                                        </label>\n");
+      out.write("                                    </div>\n");
+      out.write("                                    <div class=\"form-check\">\n");
+      out.write("                                        <input class=\"form-check-input\" type=\"radio\" name=\"flexRadioDefault\" value=\"Compras y Ventas\">\n");
+      out.write("                                        <label class=\"form-check-label\" for=\"flexRadioDefault2\">\n");
+      out.write("                                            Compras y Ventas\n");
+      out.write("                                        </label>\n");
+      out.write("                                    </div>\n");
+      out.write("                                    <div class=\"form-check\">\n");
+      out.write("                                        <input class=\"form-check-input\" type=\"radio\" name=\"flexRadioDefault\"  value=\"Gestor De Archivos\">\n");
+      out.write("                                        <label class=\"form-check-label\" for=\"flexRadioDefault3\">\n");
+      out.write("                                            Gestor De Archivos\n");
+      out.write("                                        </label>\n");
+      out.write("                                    </div>\n");
       out.write("\n");
       out.write("\n");
       out.write("                                </div>\n");

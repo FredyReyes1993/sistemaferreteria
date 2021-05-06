@@ -51,26 +51,29 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                         <div class="form-group">
                             <label for="name" class="cols-sm-2 control-label">Perfil</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <select class="form-select" name="perfiles" aria-label="Default select example">
-                                        <option selected>Seleccione el perfil</option>
-                                        <%
-                                            gestionusuarios gu = new gestionusuarios();
-                                            for (gestionusuarios g : gu.mostrarPerfil()) {
-                                        %>                               
-
-                                        <option value="<%out.print(g.getPerfil());%>"><%out.print(g.getPerfil());%></option>
-
-                                        <%}%>  
-                                    </select>   
-
-
-
-
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="Administrador">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Administrador
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="Compras y Ventas">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Compras y Ventas
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"  value="Gestor De Archivos">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            Gestor De Archivos
+                                        </label>
+                                    </div>
 
 
                                 </div>
